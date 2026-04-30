@@ -5,16 +5,45 @@
 
 /* Positioning of the Header, Nav, Main, Footer */
 
+body {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    min-width: 850px;
+}
 
+header {
+    order: 1;
+    flex-basis: 100%;
+}
 
+nav {
+    order: 2;
+    flex: 1;
+}
 
+main {
+    order: 3;
+    flex: 4;
+}
 
-/* End Positioning of the Header, Nav, Main, Footer
- ********************
+footer {
+    order: 4;
+    flex-basis: 100%;
+}
+
+nav li {
+    display: block;
+}
+
+/* End Positioning of the Header, Nav, Main, Footer */
+
 /* Positioning of Client Login Nav box */
 
+nav#client {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
 
-
-
-
-/* End Positioning of Client Login Nav box */
+/* End Positioning of Client Login Nav box */ 
